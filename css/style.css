@@ -157,3 +157,20 @@ img {
   #main {
     grid-column: 1 / -1;
   }
+
+  a:link {
+    color: rgb(10, 53, 68);
+  }
+
+  a:visited {
+    color: rgb(26, 82, 26);
+  }
+
+  a:hover {
+    background-color: rgb(64, 107, 215);
+  }
+
+  a:active {
+    box-shadow: 2px 2px 5px rgb(179, 4, 158);
+  }
+  
