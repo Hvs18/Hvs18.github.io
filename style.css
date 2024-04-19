@@ -14,6 +14,8 @@ body {
      "header header"
      "nav    nav"
      "main   main"
+     "main   main"
+     "main   main"
      "footer footer";
     max-width: 960px;
     margin: 0 auto;
@@ -39,15 +41,13 @@ nav {
     grid-gap: 20px;
     max-width: 960px;
     grid-area: nav;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    text-align: left;
 }
 
 main { 
     display: grid;
     grid-gap: 20px;
     max-width: 960px;
-    margin: 10 auto;
     grid-area: main; 
 }
 
@@ -64,24 +64,18 @@ section {
 }
 
 
-#footer {
-    grid-column: 1 / -1;
-    border-style: dotted;
-    border-color: #090909;
-}
-
 #header {
     grid-column: 1 / -1;
     font-weight: bold;
 }
 
 #gov {
-    grid-column: 1 / -1;
     border-style: dotted;
     border-color: #090909;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-bottom: 190px;
+    max-width: 300px;
 }
 
 #introduction {
@@ -92,8 +86,7 @@ section {
     padding-right: 20px;
     border-style: dotted;
     border-color: #090909;
-    
-
+    text-overflow: clip;
 }
 
 #references {
@@ -109,9 +102,9 @@ section {
     border-collapse: collapse;
 }
 
-#econ {
+#economy {
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 145px;
     padding-right: 20px;
     border-style: dotted;
     border-color: #090909;
@@ -130,12 +123,16 @@ section {
     padding-right: 20px;
     border-style: dotted;
     border-color: #090909;
+    padding-bottom: 370px;
+    padding-top: 20px;
 }
 
 #footer {
     padding-left: 20px;
     border-style: dotted;
     border-color: #090909;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
 }
 
 img {
@@ -155,4 +152,8 @@ img {
 
   figcaption {
     text-align: center;
+  }
+
+  #main {
+    grid-column: 1 / -1;
   }
