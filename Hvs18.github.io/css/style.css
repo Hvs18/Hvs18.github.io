@@ -1,159 +1,216 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Ledger&display=swap');
 
 body {
-    font-family: "Poppins", "Roboto Condensed", "Helvetica", "Arial", sans-serif;
+
+    font-family: "Adamina", "Ledger", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.5;
-    color: #222;
+    color: rgb(47, 40, 45);
 
-    display: grid;
-    grid-template-columns: 2fr, 1fr;
-    grid-template-rows: 2fr, 1fr;
-    grid-gap: 20px;
     grid-template-areas:
      "header header"
-     "nav    nav"
-     "main   main"
-     "main   main"
-     "main   main"
+     "nav    main"
      "footer footer";
-    max-width: 960px;
-    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    max-width: 80%;
+    margin: auto;
 } 
-
-
 
 header { 
     display: grid;
-    grid-gap: 20px;
-    max-width: 960px;
-    margin: 1 auto;
+    /* margin: auto; */
     grid-area: header;
-    padding: 20px;
     font-size: 1.5em;
     justify-content: center;
     border-style: solid;
     border-radius: 10px;
+    background-color: rgb(241, 180, 244);
+    border-radius: 10px; 
+    width: 80%;
 }
 
 nav {
     display: grid;
-    grid-gap: 20px;
     max-width: 960px;
     grid-area: nav;
     text-align: left;
+    line-height: 3;
+    font-size: 1.5em;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
-main { 
-    display: grid;
-    grid-gap: 20px;
-    max-width: 960px;
-    grid-area: main; 
-}
+#nav {
+    border-style: solid;
+    border-color: #090909;
+    padding-left: 10px;
+    margin-right: 0px;
+    margin-left: 40px;
+  }
 
-footer { 
-    display: grid;
-    grid-gap: 20px;
-    max-width: 960px;
-    grid-area: footer; 
-}
-
-section {
-    background-color: rgb(149, 192, 201);
+.me {
+    display: block;
+    object-fit: contain;
+    /* max-height: 400px;
+    width: 600px; 
+    height: auto; */
+    margin-left: 10px;
     border-radius: 10px;
-}
-
-
-#header {
-    grid-column: 1 / -1;
-    font-weight: bold;
-}
-
-#gov {
-    border-style: dotted;
-    border-color: #090909;
-    padding-left: 30px;
-    padding-right: 25px;
-    padding-bottom: 190px;
-    max-width: 300px;
-}
-
-#introduction {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-style: dotted;
-    border-color: #090909;
-    text-overflow: clip;
-}
-
-#references {
-    padding-left: 20px;
-    padding-right: 30px;
-    border-style: dotted;
-    border-color: #090909;
-}
-
-#table, #tables, th, td {
-    border: 1px solid;
-    width: 75%;
-    border-collapse: collapse;
-}
-
-#economy {
-    padding-left: 20px;
-    padding-bottom: 145px;
-    padding-right: 20px;
-    border-style: dotted;
-    border-color: #090909;
-}
-
-#web-images {
-    padding-left: 20px;
-    padding-top: 20px;
-    border-style: dotted;
-    border-color: #090909;
-}
-
-#people {
-    padding-left: 20px;
-    text-align: left;
-    padding-right: 20px;
-    border-style: dotted;
-    border-color: #090909;
-    padding-bottom: 370px;
-    padding-top: 20px;
-}
-
-#footer {
-    padding-left: 20px;
-    border-style: dotted;
-    border-color: #090909;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
 }
 
 img {
-    border: 5px solid #222;
-    border-radius: 10px;
-    max-width: 100%;
-    height: auto;
     display: block;
+    /* max-height: 380px; */
+    max-width: 55%;
     margin-left: auto;
     margin-right: auto;
-  }
+    border-radius: 10px;
+    object-fit: contain;
+    overflow: scroll;
+}
 
-  #nav {
-    border-style: dotted;
+.img-container {
+   display: block;
+   overflow: scroll;
+   margin-left: auto;
+   margin-right: auto;
+   width: max-content;
+   height: 300px;
+}
+
+
+footer { 
+    display: grid;
+    max-width: 960px;
+    grid-area: footer; 
+    padding: 20px 20px;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-gap: 5px;
+}
+
+section {
+    background-color: rgb(241, 180, 244);
+    border-radius: 10px;
+}
+
+#contact {
+    padding-left: 20px;
+    padding-right: 750px;
+    border-style: solid;
     border-color: #090909;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    white-space: nowrap;
+    margin-left: 30px;
+    display: block;
+}
+
+#introduction {
+  padding-left: 40px;
+  padding-right: 100px;
+  border-style: solid;
+  border-color: #090909;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  line-height: 1.5em;
+  text-align: left;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#articles {
+    padding-left: 60px;
+    text-align: left;
+    border-style: solid;
+    border-color: #090909;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: auto;
+    line-height: 2em;
+    display: inline-block;
+    margin-left: 55px;
+    margin-right: 0px;
+    padding-right: 300px;
+}
+
+#resume {
+    border-style: solid;
+    border-color: #090909;
+    width: 800px;
+    margin: auto;
+    overflow-x: scroll;
+    align-items: center;
+    column-width: 60em;
+}
+
+#footer {
+    padding-left: 30px;
+    border-style: solid;
+    border-color: #090909;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+#about-me {
+    padding-left: 0px;
+    text-align: left;
+    padding-right: 800px;
+    border-style: solid;
+    border-color: #090909;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+a:link {
+    color: rgb(229, 67, 35);
   }
 
-  figcaption {
-    text-align: center;
+  a:visited {
+    color: rgb(15, 27, 249);
   }
 
-  #main {
-    grid-column: 1 / -1;
+  a:hover {
+    background-color: rgb(3, 192, 72);
   }
+
+  a:active {
+    box-shadow: 2px 2px 5px rgb(11, 15, 3);
+  }
+
+#profile-pic {
+    margin: auto;
+    border-style: solid;
+    border-color: #090909;
+    object-fit: contain;
+    /* max-height: 550px;
+    max-width: 800px; */
+}
+
+.info {
+   column-count: 1;
+   columns: 5em;
+}
+
+.intro {
+  column-width: 700px;
+  max-width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.email{
+    display: inline;
+}
+
+.cell{
+    display: inline;
+}
