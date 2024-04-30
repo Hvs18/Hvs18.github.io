@@ -13,6 +13,7 @@ body {
      "main   main"
      "footer footer";
     display: grid;
+    height: auto;
     grid-gap: 10px;
     max-width: 960px;
     margin: 0 auto;
@@ -69,17 +70,6 @@ nav {
   padding-top: 30px;
 }
 
-/* .img {
-    display: block;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    object-fit: contain;
-    overflow: scroll;
-    height: 60%;
-} */
-
 #img-container {
    display: block;
    margin-left: auto;
@@ -94,7 +84,6 @@ footer {
   display: grid;
   grid-area: footer;
   font-size: 1em;
-  grid-gap: 5px;
   max-width: 960px;
   padding-bottom: 20px;
 }
@@ -141,10 +130,10 @@ section {
     display: flex;
     font-size: 26px;
     width: 960px;
-    height: 400px;
+    height: 350px;
     max-width: 960px;
     line-height: 2.5em;
-    padding-bottom: 20px;
+    padding-top: 40px;
 }
 
 #resume {
@@ -169,9 +158,6 @@ section {
 #about-me {
     padding-left: 0px;
     text-align: left;
-    padding-right: 800px;
-    border-style: solid;
-    border-color: #090909;
     padding-bottom: 20px;
     padding-top: 20px;
     margin: auto;
@@ -232,11 +218,6 @@ a:link {
 .links ul{
     list-style-type: none;
     justify-content: space-around;
-}
-
-.links li{
-    display: inline-block;
-    text-decoration: none;
 }
 
 #nav ul{
