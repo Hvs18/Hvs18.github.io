@@ -20,12 +20,12 @@ body {
     grid-template-columns: auto;
     grid-template-rows: auto;
     background-color: rgb(171, 232, 150, 0.5);
-    background:         linear-gradient(#aee7d8, #72b1df);
+    background: linear-gradient(#aee7d8, #72b1df);
 } 
 
 header { 
     display: grid;
-    margin: auto;
+    margin: 0;
     grid-area: header;
     font-size: 1.5em;
     justify-content: center;
@@ -90,7 +90,6 @@ footer {
 
 section {
     background-color: rgb(251, 251, 251);
-    /* border-radius: 10px; */
 }
 
 #contact {
@@ -101,39 +100,40 @@ section {
   column-gap: 10em;
   width: 960px;
   justify-content: center;
-  font-size: 26px;
-  height: 300px;
-  padding-top: 150px;
+  font-size: 28px;
+  height: 250px;
   max-width: 960px;
   display: flex;
-  border-radius: 50%;
+  border-radius: 25%;
   padding-top: 200px;
 }
 
 #introduction {
     border-style: solid;
     border-color: #090909;
-    line-height: 3.5em;
-    text-align: left;
+    line-height: 4em;
     display: flex;
     justify-content: center;
     max-width: 960px;
     width: 960px;
-    padding-bottom: 30px;
-    border-radius: 30%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 25%;
+    height: 500px;
 }
 
 #articles {
-    text-align: left;
     border-style: solid;
     border-color: #090909;
     display: flex;
     font-size: 26px;
-    width: 960px;
+    width: 940px;
     height: 350px;
     max-width: 960px;
-    line-height: 2.5em;
-    padding-top: 40px;
+    line-height: 4.5em;
+    padding-top: 80px;
+    padding-left: 20px;
+    text-shadow: 1px 1px 3px #272e2a
 }
 
 #resume {
@@ -151,20 +151,13 @@ section {
   border-style: solid;
   border-color: #090909;
   font-size: 20px;
-  padding:15px;
+  padding: 15px;
   border-radius: 10px;
-}
-
-#about-me {
-    padding-left: 0px;
-    text-align: left;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin: auto;
+  width: 930px;
 }
 
 a:link {
-    color: rgb(9, 7, 7);
+    color: rgb(27, 181, 68);
   }
 
   a:visited {
@@ -172,11 +165,11 @@ a:link {
   }
 
   a:hover {
-    background-color: rgb(203, 240, 112);
+    background-color: rgb(69, 29, 163);
   }
 
   a:active {
-    box-shadow: 2px 2px 5px rgb(11, 15, 3);
+    box-shadow: 2px 2px 5px rgb(229, 81, 83);
   }
 
 #profile-pic {
@@ -200,31 +193,27 @@ a:link {
   justify-content: center;
   font-size: 27px;
   height: 400px;
-  padding-top: 30px;
   text-align: left;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .email{
     display: inline-block;
+    text-shadow: 1px 1px 3px #272e2a
 }
 
 .cell{
     display: inline-block;
+    text-shadow: 1px 1px 3px #272e2a
 }
 
-.links ul{
+/* .links ul{
     list-style-type: none;
-    justify-content: space-around;
-}
+} */
 
 #nav ul{
     list-style-type: none;
-    justify-content: space-around;
     display: flex;
-    column-gap: 4em;
+    column-gap: 7em;
 }
 
 #nav li{
@@ -264,4 +253,16 @@ a:link {
     text-decoration: none; 
   font-size: 20px;
 
+}
+
+.linkstwo {
+    justify-content: right;
+    display: flex;
+}
+
+.linksone {
+    justify-content: left;
+    display: flex;
+    width: 450px;
+    padding-left: 30px;
 }
